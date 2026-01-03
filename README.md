@@ -17,7 +17,7 @@ The pipeline runs daily and maintains a full time-series history for each countr
 ---
 
 ## 🧩 Pipeline Architecture
-![Pipeline Diagram](images/covid_pipeline_diagram.png)
+![Pipeline Architecture](Pipeline%20Architecture.png)
 
 ---
 
