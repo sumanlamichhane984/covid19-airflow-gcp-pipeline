@@ -51,12 +51,12 @@ covid19-airflow-gcp-pipeline/
 
 ## 🗄️ BigQuery Data Model
 
-### `covid_country_staging`
+### covid_country_staging
 - Temporary landing table loaded from GCS  
 - Truncated and reloaded daily  
 
-### `covid_country_history`
-- Partitioned by `snapshot_date`  
+### covid_country_history
+- Partitioned by snapshot_date  
 - Stores full historical COVID-19 data per country  
 - Used for:
   - Trend analysis  
@@ -66,7 +66,7 @@ covid19-airflow-gcp-pipeline/
 ---
 
 ## 🚀 How to Run
-1. Deploy `covid_daily_pipeline.py` to a Google Cloud Composer environment  
+1. Deploy covid_daily_pipeline.py to a Google Cloud Composer environment  
 2. Set the Airflow Variable `COMPOSER_BUCKET` to your GCS bucket name  
 3. Ensure the BigQuery dataset and tables are created  
 4. The DAG will run daily and populate the history table  
