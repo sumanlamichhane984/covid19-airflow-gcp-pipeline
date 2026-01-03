@@ -67,7 +67,7 @@ covid19-airflow-gcp-pipeline/
 
 ## 🚀 How to Run
 1. Deploy covid_daily_pipeline.py to a Google Cloud Composer environment  
-2. Set the Airflow Variable `COMPOSER_BUCKET` to your GCS bucket name  
+2. Set the Airflow Variable COMPOSER_BUCKET to your GCS bucket name  
 3. Ensure the BigQuery dataset and tables are created  
 4. The DAG will run daily and populate the history table  
 
