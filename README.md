@@ -31,9 +31,10 @@ The pipeline runs daily and maintains a full time-series history for each countr
 
 ---
 
+```markdown
 ## 📂 Repository Structure
 
-```text
+<pre>
 covid19-airflow-gcp-pipeline/
 ├── dags/
 │   └── covid_daily_pipeline.py
@@ -46,6 +47,7 @@ covid19-airflow-gcp-pipeline/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+</pre>
 
 
 ---
