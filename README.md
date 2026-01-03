@@ -45,3 +45,22 @@ covid19-airflow-gcp-pipeline/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+---
+## 🗄️ BigQuery Data Model
+
+### **Staging Table – `covid_country_staging`**
+Temporary landing table loaded from GCS each day.  
+This table is **truncated and reloaded** every run.
+
+### **History Table – `covid_country_history`**
+Partitioned by `snapshot_date` and stores full historical COVID-19 data per country.  
+Used for:
+- Trend analysis  
+- Country-level comparisons  
+- Daily change tracking  
+
+---
+
+## 🚀 How to Run
+1. Deploy `covid_daily_pipeline.py` to a **Google Cloud Composer** environment  
+2. Set the Airflow Variable:
