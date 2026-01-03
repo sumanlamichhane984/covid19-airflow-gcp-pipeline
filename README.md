@@ -38,6 +38,9 @@ covid19-airflow-gcp-pipeline/
 └── .gitignore                       # Git ignore rules
 
 
+
+
+
 ## 🚀 How to Run
 1. Deploy the DAG file to a Google Cloud Composer environment  
 2. Set the Airflow Variable `COMPOSER_BUCKET` to your Composer GCS bucket  
