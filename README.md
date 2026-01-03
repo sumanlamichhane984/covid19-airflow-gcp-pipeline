@@ -23,18 +23,20 @@ An automated data pipeline built with Apache Airflow (Cloud Composer) that inges
 
 ## 📂 Repository Structure
 
+```text
 covid19-airflow-gcp-pipeline/
 ├── dags/
-│   └── covid_daily_pipeline.py
+│   └── covid_daily_pipeline.py      # Airflow DAG for COVID-19 ingestion
 ├── data/
 │   └── sample/
-│       └── covid_sample.ndjson
+│       └── covid_sample.ndjson      # Sample API response for testing
 ├── images/
-│   └── covid_pipeline_diagram.png
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
+│   └── covid_pipeline_diagram.png   # Architecture diagram
+├── requirements.txt                # Python dependencies
+├── README.md                        # Project documentation
+├── LICENSE                          # MIT License
+└── .gitignore                       # Git ignore rules
+
 
 ## 🚀 How to Run
 1. Deploy the DAG file to a Google Cloud Composer environment  
